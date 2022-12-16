@@ -19,7 +19,7 @@ class People(Base):
     id = Column(Integer, primary_key=True)
     birth_year = Column(String)
     eye_color = Column(String)
-    Films = Column(JSON["title"])
+    films = Column(JSON["title"])
     gender = Column(Enum("Male", "Female"))
     hair_color = Column(String)
     height = Column(Integer)
@@ -27,9 +27,9 @@ class People(Base):
     mass = Column(Integer)
     name = Column(String)
     skin_color = Column(String)
-    Species = Column(JSON['name'])
-    Starships = Column(JSON['name'])
-    Vehicles = Column(JSON['name'])
+    species = Column(JSON['name'])
+    starships = Column(JSON['name'])
+    vehicles = Column(JSON['name'])
 
 
 CHUNK_SIZE = 10
